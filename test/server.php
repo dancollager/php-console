@@ -8,7 +8,7 @@ const IS_SERVER = true;
 
 require_once(__DIR__ . '/bootstrap.php');
 
-if(!isset($_SERVER['REMOTE_ADDR']) || $_SERVER['REMOTE_ADDR'] != '127.0.0.1') {
+if(!isset($_SERVER['REMOTE_ADDR']) || $_SERVER['REMOTE_ADDR'] != '192.168.0.29') {
 	throw new \Exception('Connection to test server allowed only from local IP');
 }
 
